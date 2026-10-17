@@ -1,0 +1,187 @@
+{
+  "class_counts": {
+    "B": 357,
+    "M": 212
+  },
+  "class_percent": {
+    "B": 62.74,
+    "M": 37.26
+  },
+  "imbalance_ratio": 1.6839622641509433,
+  "majority_baseline_accuracy": 0.6274000000000001,
+  "top_target_corr": {
+    "concave points_worst": 0.7935660171412694,
+    "perimeter_worst": 0.7829141371737595,
+    "concave points_mean": 0.7766138400204369,
+    "radius_worst": 0.7764537785950396,
+    "perimeter_mean": 0.7426355297258334
+  },
+  "n_high_corr_pairs": 21,
+  "null_cells_raw": 569,
+  "dropped_columns": [
+    "id",
+    "Unnamed: 32"
+  ],
+  "n_train": 455,
+  "n_test": 114,
+  "n_features": 30,
+  "baseline": {
+    "accuracy": 0.9736842105263158,
+    "precision": 1.0,
+    "recall": 0.9285714285714286,
+    "f1": 0.9629629629629629,
+    "roc_auc": 0.9928902116402116
+  },
+  "best_params": {
+    "max_depth": 10,
+    "max_features": "log2",
+    "n_estimators": 200
+  },
+  "cv_best_f1": 0.9557201007947278,
+  "grid_size": 40,
+  "n_close_configs": 9,
+  "oob_error_at_chosen": 0.04395604395604391,
+  "oob_error_min": 0.03516483516483515,
+  "confusion": {
+    "tn": 72,
+    "fp": 0,
+    "fn": 5,
+    "tp": 37
+  },
+  "final": {
+    "accuracy": 0.956140350877193,
+    "precision": 1.0,
+    "recall": 0.8809523809523809,
+    "specificity": 1.0,
+    "f1": 0.9367088607594937,
+    "roc_auc": 0.9942129629629629
+  },
+  "threshold_table": [
+    {
+      "threshold": 0.2,
+      "precision": 0.8696,
+      "recall": 0.9524,
+      "f1": 0.9091,
+      "FP": 6,
+      "FN": 2
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.9512,
+      "recall": 0.9286,
+      "f1": 0.9398,
+      "FP": 2,
+      "FN": 3
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.975,
+      "recall": 0.9286,
+      "f1": 0.9512,
+      "FP": 1,
+      "FN": 3
+    },
+    {
+      "threshold": 0.5,
+      "precision": 1.0,
+      "recall": 0.881,
+      "f1": 0.9367,
+      "FP": 0,
+      "FN": 5
+    },
+    {
+      "threshold": 0.6,
+      "precision": 1.0,
+      "recall": 0.881,
+      "f1": 0.9367,
+      "FP": 0,
+      "FN": 5
+    },
+    {
+      "threshold": 0.7,
+      "precision": 1.0,
+      "recall": 0.8571,
+      "f1": 0.9231,
+      "FP": 0,
+      "FN": 6
+    },
+    {
+      "threshold": 0.8,
+      "precision": 1.0,
+      "recall": 0.7857,
+      "f1": 0.88,
+      "FP": 0,
+      "FN": 9
+    }
+  ],
+  "average_precision": 0.9909864603481624,
+  "top_features": {
+    "perimeter_worst": 0.133121655557238,
+    "area_worst": 0.10909934899668335,
+    "concave points_worst": 0.09374102351387167,
+    "concave points_mean": 0.0871609388624876,
+    "radius_worst": 0.0846601627885026,
+    "perimeter_mean": 0.07230264616855867,
+    "radius_mean": 0.05614045626960606,
+    "area_mean": 0.052530608863052206,
+    "concavity_mean": 0.051634121244784906,
+    "area_se": 0.04331749628985132
+  },
+  "top5_share": 0.5077831297187833,
+  "top10_share": 0.7837084585546363,
+  "perm_top": {
+    "concave points_worst": 0.007423635904648551,
+    "texture_worst": 0.005837481593287549,
+    "concavity_se": 0.0,
+    "texture_se": -0.000443037974683543,
+    "symmetry_se": -0.0013291139240506288
+  },
+  "cv_full": {
+    "accuracy": [
+      0.9595870206489675,
+      0.010495953691066786
+    ],
+    "precision": [
+      0.9590122044241036,
+      0.031379627028306996
+    ],
+    "recall": [
+      0.934108527131783,
+      0.04994941696325372
+    ],
+    "f1": [
+      0.9447781336399224,
+      0.015702665362968573
+    ],
+    "roc_auc": [
+      0.9927671325108273,
+      0.00390047318002319
+    ]
+  },
+  "scaling_identical_predictions": true,
+  "scaling_f1": 0.9367088607594937,
+  "scaling_auc": 0.994212962962963,
+  "model_comparison": {
+    "Baseline RF": {
+      "Accuracy": 0.9737,
+      "Precision": 1.0,
+      "Recall": 0.9286,
+      "F1": 0.963,
+      "ROC-AUC": 0.9929
+    },
+    "Tuned RF": {
+      "Accuracy": 0.9561,
+      "Precision": 1.0,
+      "Recall": 0.881,
+      "F1": 0.9367,
+      "ROC-AUC": 0.9942
+    },
+    "Gradient Boosting (default)": {
+      "Accuracy": 0.9649,
+      "Precision": 1.0,
+      "Recall": 0.9048,
+      "F1": 0.95,
+      "ROC-AUC": 0.9947
+    }
+  }
+}
